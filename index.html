@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!--Input box-->
+      <div class="input-box">
+        <input
+          type="text"
+          placeholder="Enter a word to search..."
+          class="searched-word"
+        />
+        <button class="search-btn">Search</button>
+      </div>
+
+      <!--Result-->
+      <div class="result-container">
+        <div class="pronunciation">
+          <h1 id="searched-word-text">serene</h1>
+          <button id="audio-btn">
+            <img src="./assets/audio.png" alt="" />
+          </button>
+          <audio id="audio"></audio>
+        </div>
+
+        <div class="pronunciation-text">
+          <span class="type">adjective</span>
+          <span class="pron">/sere:in/</span><br />
+        </div>
+
+        <div class="example">
+          <p class="meaning">calm, peaceful, and untroubled; tranquil</p>
+          <p id="example">her eyes were closed and she looked very serene</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

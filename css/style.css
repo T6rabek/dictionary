@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #b0a4fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Montserrat';
+}
+
+.container {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  width: 500px;
+  overflow: hidden;
+}
+
+.input-box {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #b0a4fc;
+  padding: 10px 5px;
+  width: 330px;
+  font-size: 1.1rem;
+  font-family: 'Montserrat';
+}
+
+.input-box input::placeholder {
+  font-size: 1rem;
+  font-family: 'Montserrat';
+}
+
+.input-box button {
+  background: #b0a4fc;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+  width: 90px;
+  color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-family: 'Montserrat';
+  cursor: pointer;
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.input-box button:active {
+  /* box-shadow: none; */
+  color: #b0a4fc;
+  background: #fff;
+  font-weight: bold;
+}
+
+.result-container {
+  display: none;
+}
+
+.pronunciation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.pronunciation h1 {
+  font-weight: 550;
+  font-family: 'Quicksand';
+  padding-left: 10px;
+}
+
+.pronunciation button {
+  background: transparent;
+  border: none;
+  padding-top: 20px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50%;
+}
+
+.pronunciation button img {
+  width: 20px;
+}
+
+.pronunciation button:focus {
+  outline: none;
+}
+
+#audio-btn:active {
+  border: 0;
+  outline: 0;
+  width: 30px;
+}
+
+.pronunciation-text {
+  padding-top: 5px;
+  padding-left: 11px;
+  font-size: 0.9rem;
+  color: #a6a3a3;
+}
+
+.example {
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+.example .meaning {
+  font-family: 'Quicksand';
+  font-size: 1.2rem;
+}
+
+.example #example {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 100px;
+  /* font-family: 'Quicksand'; */
+  /* font-size: 1.1rem; */
+  font-style: italic;
+  padding-top: 30px;
+}
+
+.example #example::before {
+  content: '|';
+  padding-right: 15px;
+  font-weight: bold;
+  color: #b0a4fc;
+  font-size: 1.3rem;
+  font-style: normal;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .input-box input {
+    width: calc(90% - 110px);
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 300px;
+  }
+
+  .input-box input::placeholder {
+    font-size: 0.9rem;
+  }
+}
